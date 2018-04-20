@@ -1,16 +1,6 @@
-Jenkinsfile (Declarative Pipeline)
-pipeline {
-    agent { docker { image 'maven:3.3.3' } }
-    stages {
-        stage('build') {
-            steps {
-                sh 'mvn --version'
-            }
-	stage('deploy'){
-            steps{
-                 sh 'cf push jenkins'
-          }
-        }
-        }
-    }
+Jenkinsfile (Scripted Pipeline)
+node {
+  stage('build') {
+         echo 'im working'
+	}
 }
