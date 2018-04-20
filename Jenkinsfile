@@ -6,6 +6,11 @@ pipeline {
             steps {
                 sh 'mvn --version'
             }
+	stage('deploy'){
+            steps{
+                 sh 'cf push jenkins'
+          }
+        }
         }
     }
 }
