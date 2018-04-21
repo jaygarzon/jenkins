@@ -1,5 +1,5 @@
 Jenkinsfile (Scripted Pipeline)
-node {
+node('Master') {
 
          echo 'im working'
 	
