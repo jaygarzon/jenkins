@@ -1,6 +1,6 @@
 node {
     stage('Build') {
-        echo 'Building....'
+        sh ./gradlew bootRun
     }
     stage('Test') {
         echo 'Building....'
