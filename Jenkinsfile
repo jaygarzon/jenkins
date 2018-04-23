@@ -1,6 +1,11 @@
 Jenkinsfile (Scripted Pipeline)
-node('master') {
-
-         echo 'im working'
-	
+pipeline {
+   
+    stages {
+        stage('build') {
+            steps {
+                sh 'java --version'
+            }
+        }
+    }
 }
