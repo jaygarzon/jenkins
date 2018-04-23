@@ -1,4 +1,7 @@
 node {
+    stage('Checkout'){
+       scm' https://github.com/jaygarzon/jenkins/tree/master/jenkins'  
+    }
     stage('Build') {
         sh './gradlew bootRun'
     }
